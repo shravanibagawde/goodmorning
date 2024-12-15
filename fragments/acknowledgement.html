@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/source/apple/391/large-green-square_1f7e9.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="fragment.css">
+	<title>Good Morning..!</title>
+</head>
+<body>
+	<div id="currentTime"></div>
+	<div class="container">
+		<p>When asked about the image-sharing practice by <a href="https://www.wsj.com/articles/the-internet-is-filling-up-because-indians-are-sending-millions-of-good-morning-texts-1516640068">The Wall Street Journal</a>, user Kanwarjot Singh ascribed his habit to simply “feeling happy that people are remembering me.”</p>
+</p> 
+	</div>
+<script type="text/javascript">
+
+function updateCurrentTimeIST() {
+
+  const now = new Date();
+  const ISTOffset = 570 * 60 * 1000; // 5 hours 30 minutes in milliseconds
+  const ISTTime = new Date(now.getTime() + ISTOffset);
+
+  let hours = ISTTime.getHours();
+  let minutes = ISTTime.getMinutes();
+  let seconds = ISTTime.getSeconds();
+
+  const meridiem = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12 || 12; // Convert 0 to 12 for 12-hour format
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  seconds = seconds < 10 ? '0' + seconds : seconds;
+
+  const timeStringIST = hours + ':' + minutes + ' ' + meridiem + ' ' + '(IST)';
+
+  const currentTimeISTElement = document.getElementById('currentTime');
+  if (currentTimeISTElement) {
+    currentTimeISTElement.textContent = timeStringIST;
+  }
+}
+
+updateCurrentTimeIST();
+setInterval(updateCurrentTimeIST, 1000);
+
+</script>
+</body>
+</html>

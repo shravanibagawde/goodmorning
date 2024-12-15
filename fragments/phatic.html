@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="https://em-content.zobj.net/source/apple/391/large-green-square_1f7e9.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="fragment.css">
+	<title>Good Morning..!</title>
+</head>
+<body>
+	<div id="currentTime"></div>
+	<div class="container">
+		<p>The sociable nature of these communications points to the larger role of the phatic communion in these networks, in which exchanges are primarily conducted for their social function as opposed to an informative function. </p><br>
+		<p>In such cases, the images are entirely secondary to the circulation of a positive affect, with the emotional response being drawn from the social interaction itself.</p>
+</p> 
+	</div>
+<script type="text/javascript">
+
+function updateCurrentTimeIST() {
+
+  const now = new Date();
+  const ISTOffset = 570 * 60 * 1000; // 5 hours 30 minutes in milliseconds
+  const ISTTime = new Date(now.getTime() + ISTOffset);
+
+  let hours = ISTTime.getHours();
+  let minutes = ISTTime.getMinutes();
+  let seconds = ISTTime.getSeconds();
+
+  const meridiem = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12 || 12; // Convert 0 to 12 for 12-hour format
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  seconds = seconds < 10 ? '0' + seconds : seconds;
+
+  const timeStringIST = hours + ':' + minutes + ' ' + meridiem + ' ' + '(IST)';
+
+  const currentTimeISTElement = document.getElementById('currentTime');
+  if (currentTimeISTElement) {
+    currentTimeISTElement.textContent = timeStringIST;
+  }
+}
+
+updateCurrentTimeIST();
+setInterval(updateCurrentTimeIST, 1000);
+
+</script>
+</body>
+</html>
