@@ -62,12 +62,12 @@ a, a:active, a:hover {
   text-align: center;
   justify-items: center;
   padding-bottom: 2.5em;
-  padding-top: 27.5em;
+  padding-top: 22.5em;
 
 }
 
 img {
-	width: inherit;
+	width: 50%;
 	height: auto;
 	padding-top: 2em;
 	padding-bottom: 2em;
@@ -107,13 +107,6 @@ img {
 	.wrapper {
 		display: block;
 	}
-
-	img {
-	width: inherit;
-	height: auto;
-	padding-top: 2em;
-	padding-bottom: 2em;
-}
 
 #currentTime {
 	padding-top: 1em;
