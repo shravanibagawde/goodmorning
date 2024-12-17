@@ -32,7 +32,6 @@ body {
 	z-index: 100;
 	text-align: center;
 	position: fixed;
-	/*background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));*/
 }
 
 a, a:active, a:hover {
@@ -41,6 +40,7 @@ a, a:active, a:hover {
 }
 
 .sign {
+	margin: 0;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -51,9 +51,8 @@ a, a:active, a:hover {
 }
 
 .wrapper {
-  margin: 0;
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -62,6 +61,16 @@ a, a:active, a:hover {
   width: 17.5em;
   text-align: center;
   justify-items: center;
+  padding-bottom: 2.5em;
+  padding-top: 20.5em;
+
+}
+
+img {
+	width: 60%;
+	height: auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 #start {
@@ -74,6 +83,7 @@ a, a:active, a:hover {
 	border: 1.25px solid black;
 	border-radius: 50%;
 	margin-top: 1em;
+	margin-bottom: 2em;
 	transition: 0.15s;
 }
 
@@ -97,5 +107,19 @@ a, a:active, a:hover {
 	.wrapper {
 		display: block;
 	}
+
+#currentTime {
+	padding-top: 1em;
+	margin: 0;
+	width: 100%;
+	font-family: Times New Roman;
+	font-weight: bold;
+	font-size: 1em;
+	height: 7.5em;
+	z-index: 100;
+	text-align: center;
+	position: fixed;
+	background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255,1));
+}
 
 }
