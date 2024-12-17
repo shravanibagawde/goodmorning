@@ -35,7 +35,7 @@ body {
 }
 
 a, a:active, a:hover {
-	color: black;
+	color: limegreen;
 	text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ a, a:active, a:hover {
   text-align: center;
   justify-items: center;
   padding-bottom: 2.5em;
-  padding-top: 27.5em;
+  padding-top: 30.5em;
 
 }
 
@@ -74,7 +74,7 @@ a, a:active, a:hover {
 }
 
 #image2 {
-	width: 50%;
+	width: 80%;
   box-shadow: 10 0 5px 1px #555;
 	height: auto;
 	padding-top: 1em;
@@ -93,6 +93,7 @@ a, a:active, a:hover {
 	margin-top: 1em;
 	margin-bottom: 2em;
 	transition: 0.15s;
+	color: black;
 }
 
 #start:active, #start:hover {
