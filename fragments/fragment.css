@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Authentic Sans";
   font-style: normal;
-  src: url("type/AUTHENTICSans-90.woff"), url("type/AUTHENTICSans-90.woff2");
+  src: url("type/AUTHENTICSans-90.woff"), url("../type/AUTHENTICSans-90.woff2");
 }
 
 * {
