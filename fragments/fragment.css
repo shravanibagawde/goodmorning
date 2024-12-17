@@ -1,6 +1,7 @@
-@font-face { 
-font-family: "Arial Narrow"; 
-src: url('../arial_narrow.ttf') format('truetype'); 
+@font-face {
+  font-family: "Authentic Sans";
+  font-style: normal;
+  src: url("type/AUTHENTICSans-90.woff"), url("type/AUTHENTICSans-90.woff2");
 }
 
 * {
@@ -15,13 +16,16 @@ body {
 	/*text-align: center;*/
 	margin: 0;
 	padding: 0;
-	font-family: "Arial Narrow"
+	font-family: "Authentic Sans", sans-serif;
 }
 
 #currentTime {
 	padding-top: 1em;
 	margin: 0;
 	width: 100%;
+	font-family: Times New Roman;
+	font-weight: bold;
+	font-size: 1em;
 	font-size: 1em;
 	height: 7.5em;
 	z-index: 100;
